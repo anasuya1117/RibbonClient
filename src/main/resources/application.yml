@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: RibbonClient
+
+server:
+  port: 8888
+
+ping-server:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:9001,localhost:9002
+    ServerListRefreshInterval: 15000
